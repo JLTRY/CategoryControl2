@@ -16,6 +16,17 @@ To install this extension, add the following to LocalSettings.php:
 
 require_once("$IP/extensions/CategoryControl2/CategoryControl.php");
 
+### Configuration
+
+exemple:
+$wgCategoryPermissions['Catégories_cachées']['*'][] = 'sysop'; // Sysops can do anything they want with this category.
+
+$wgCategoryPermissions['Catégories_cachées']['read'] = array('sysop', 'family'); // Sysops can do anything they want with this category.
+
+$wgCategoryPermissions['Private']['*'][] = 'sysop'; // Sysops can do anything they want with this category.
+
+$wgCategoryPermissions['Private']['read'] = array('sysop', 'family'); // Sysops can do anything they want with this category.
+
 
 ### Original files from
 
