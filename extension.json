@@ -1,0 +1,21 @@
+{
+	"name": "CategoryControl2",
+	"version": "1.0.1",
+	"author": [
+		"[http://www.mediawiki.org/wiki/User:Kkragenbrink Kevin Kragenbrink]",
+		"[http://www.mediawiki.org/wiki/User:JLTRY JLTRY]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:CategoryControl2",
+	"description": "Category and UserGroup based authorizations",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.34.0"
+	},
+	"Hooks": {
+		"getUserPermissionsErrors": [
+			"MediaWiki\\Extension\\CategoryControl2\\hookCategoryControl"
+		]
+	},
+	"manifest_version": 1
+}
